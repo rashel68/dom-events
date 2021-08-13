@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Submitted Form</title>
+</head>
+
+<body>
+    <div id="display-form"></div>
+    <div>
+        <input type="text" name="name" id="nameField"> <br> <br>
+        <input type="email" name="email" id="emailField"> <br> <br>
+        <textarea name="" id="commentField" cols="30" rows="10"></textarea> <br> <br>
+        <button id="submitButton">Submit</button>
+    </div>
+
+
+
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function () {
+            const nameField = document.getElementById('nameField');
+            const emailField = document.getElementById('emailField');
+            const commentBox = document.getElementById('commentField');
+
+            const p = document.createElement('p');
+            p.innerText = 'Your Name: ' + nameField.value + ' Your Email: ' + emailField.value + ' Your Comment: ' + commentBox.value;
+
+
+            const displayForm = document.getElementById('display-form');
+            displayForm.appendChild(p);
+        })
+    </script>
+</body>
+
+</html>

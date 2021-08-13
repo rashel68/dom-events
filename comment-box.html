@@ -9,7 +9,31 @@
 </head>
 
 <body>
+    <div id="comment-section">
+        <h2>Add your Comment Here</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta minus error quam beatae molestiae
+            dolorem aperiam. Voluptatibus pariatur placeat temporibus. Reiciendis eaque minima maiores voluptas
+            voluptates minus consequuntur delectus.</p>
 
+    </div>
+    <div>
+        <textarea name="comment" id="comment" cols="60" rows="10"></textarea> <br>
+        <button id="commentButton">Post</button>
+    </div>
+
+    <script>
+        document.getElementById('commentButton').addEventListener('click', function () {
+
+            const commentBox = document.getElementById('comment');
+
+            const p = document.createElement('p');
+            p.innerText = 'Your Comment > ' + commentBox.value;
+
+            const commentSection = document.getElementById('comment-section');
+            commentSection.appendChild(p);
+            commentBox.value = ' ';
+        })
+    </script>
 </body>
 
 </html>
