@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Events</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            padding: 20px 40px;
+            border: 2px solid #fff;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Changing Body Background Color In Different Way Using Common JavaScript Events</h2>
+    </header>
+    <main>
+        <button onclick="document.body.style.backgroundColor = 'green'" style="background-color: green;"></button>
+
+        <!-- using function  -->
+        <button onclick="makeRed()" style="background-color: red;"></button>
+
+        <!-- using button id on function -->
+        <button id="blue-button" style="background-color: blue;"></button>
+
+        <!-- using button id on anonymous function  -->
+        <button id="tomato-button" style="background-color: tomato;"></button>
+
+        <!-- using eventListener  -->
+        <button id="gray-button" style="background-color: gray;"></button>
+
+        <!-- using eventListener on anonymous function  -->
+        <button id="pink-button" style="background-color: pink;"></button>
+
+        <!-- anonymous function using direct one line -->
+        <button id="lightBlue-button" style="background-color: lightblue;"></button>
+    </main>
+
+
+
+    <script src="events.js"></script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
